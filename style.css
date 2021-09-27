@@ -31,7 +31,7 @@ footer {
 
 a, a:hover, a:visited, a:link {
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 
 .hidden {
@@ -71,8 +71,13 @@ div.gallery {
 
   
   
- 
+  .nav-link>li.active>a, .nav-link>li.active>a:focus, .nav-link>li.active>a:hover {
+    color: #337ab7;;
+  }
 
+  .nav-link {
+    color: #337ab7;
+  }
 
 
 
