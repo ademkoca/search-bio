@@ -7,13 +7,31 @@
     margin-top: 2rem;
 }
 
-footer p a {
-    color: #fff;
-    font-weight: bolder;
-}
+footer {
+  background-color: grey;
+  text-align: center;
+ }
+ footer a {
+     text-decoration: none;
+     /* margin-right: 10px; */
+     width: 100%;
+     color: white;
+ }
+ 
+ footer span {
+     margin: 0 4px;
+     color: white;
+ }
+ footer strong {
+     margin-right: 5px;
+     color: white;
+ }
+
+
 
 a, a:hover, a:visited, a:link {
     text-decoration: none;
+    color: white;
 }
 
 .hidden {
@@ -82,5 +100,10 @@ div.gallery {
   @media screen and (max-width: 768px) {
       .sidenav {
           height: 216px;
+
+      }
+
+      #artists-bio {
+        min-height: 68.8vh;
       }
   }
