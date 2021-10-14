@@ -95,7 +95,7 @@ div.gallery {
     
   }
   
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 576px) {
     .responsive {
       width: 100%;
     }
@@ -122,4 +122,15 @@ div.gallery {
 .toast-link, .toast-link:hover, .toast-link:active, .toast-link:link, .toast-link:visited {
     text-decoration: none;
     color: #ffffff;
+}
+
+h1 a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1 a:hover {
+  color: unset;
+  text-decoration: none;
+opacity: 0.7;
 }

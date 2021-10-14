@@ -10,6 +10,7 @@ searchbar.addEventListener('keypress', function (e) {
 var flag = 1;
 async function renderArtists() {
     let html = '';
+    if(searchbar.value!=""){
     let query = document.getElementById('searchbar').value.trim();
     fetch(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${query}`)
         // fetch(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay`)
@@ -71,6 +72,7 @@ async function renderArtists() {
 
 
         });
+      }
 }
 
 // const albumsBtn = document.getElementById('albums');
