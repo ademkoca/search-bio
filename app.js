@@ -20,13 +20,13 @@ async function renderArtists() {
             if (data.artists) {
                 data.artists.forEach(artist => {
                     let htmlSegment = `<h2>${artist.strArtist}</h2><img class="band-logo" src="${artist.strArtistThumb}">
-                                    <h5><span class="glyphicon glyphicon-home"></span> From: ${artist.strCountry}</h5>
-                                    <h5><span class="glyphicon glyphicon-time"></span> Formed: ${artist.intFormedYear}</h5>
-                                    <h5><span class="glyphicon glyphicon-cd"></span> Label: ${artist.strLabel}</h5>
-                                    <span class="label label-primary">${artist.strGenre}</span>&nbsp;<span class="label label-primary">${artist.strStyle}</span>                                    
+                                    <h5><i class="bi bi-house-fill"></i> From: ${artist.strCountry}</h5>
+                                    <h5><i class="bi bi-calendar-date"></i> Formed: ${artist.intFormedYear}</h5>
+                                    <h5><i class="bi bi-vinyl-fill"></i> Label: ${artist.strLabel}</h5>
+                                    <span class="badge bg-primary">${artist.strGenre}</span>&nbsp;<span class="badge bg-secondary">${artist.strStyle}</span>                                    
                                     <p>${artist.strBiographyEN}</p>
                                     <!--<img src="${artist.strArtistThumb}">-->
-                                    <h5>Website</span>: <a href="https://${artist.strWebsite}" target="_blank">${artist.strWebsite}</a></h5>
+                                    <h5>Website: <a href="https://${artist.strWebsite}" target="_blank">${artist.strWebsite}</a></h5>
                                     <br><br>                                   
                                     `;
 
