@@ -1,3 +1,6 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+}
 .band-logo {
     position: absolute;
     right: 0;
@@ -112,3 +115,11 @@ div.gallery {
         min-height: 68.8vh;
       }
   }
+
+  button[type=button].toast-btn {
+    position: static;
+}
+.toast-link, .toast-link:hover, .toast-link:active, .toast-link:link, .toast-link:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
