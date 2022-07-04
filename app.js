@@ -12,7 +12,7 @@ async function renderArtists() {
     let html = '';
     if(searchbar.value!=""){
     let query = document.getElementById('searchbar').value.trim();
-    fetch(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${query}`)
+    fetch(`https://www.theaudiodb.com/api/v1/json/2/search.php?s=${query}`)
         // fetch(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=coldplay`)
         // let artists = await getArtists();
         .then(response => response.json())
@@ -42,7 +42,7 @@ async function renderArtists() {
                 html = "No records for this artist";
             }
 
-            fetch(`https://theaudiodb.com/api/v1/json/1/discography.php?s=${query}`)
+            fetch(`https://theaudiodb.com/api/v1/json/2/discography.php?s=${query}`)
                 // fetch(`https://theaudiodb.com/api/v1/json/1/discography.php?s=coldplay`)
                 .then(response => response.json())
                 .then(data => {
@@ -127,7 +127,7 @@ function activeSecond() {
     flag = 1;
     document.getElementById('page-title').innerHTML="Artist's images";
     let query = document.getElementById('searchbar').value.trim();
-    fetch(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${query}`)
+    fetch(`https://www.theaudiodb.com/api/v1/json/2/search.php?s=${query}`)
         .then(response => response.json())
         .then(data => {
             if (data.artists) {
